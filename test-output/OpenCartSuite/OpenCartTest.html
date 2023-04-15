@@ -1,0 +1,518 @@
+<html>
+<head>
+<title>TestNG:  OpenCartTest</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>OpenCartTest</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>25/4/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Apr 12 19:23:37 MST 2023</td>
+</tr>
+<tr><td>Total time:</td><td>462 seconds (462882 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.qa.opencart.testcase.MyAccountPageTest.PerformProductSearchTest()'><b>PerformProductSearchTest</b><br>Test class: com.qa.opencart.testcase.MyAccountPageTest<br>Test method: TC_07_Perform product search<br>Parameters: MacBook</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button type=&quot;button&quot; class=&quot;btn btn-default btn-lg&quot; style=&quot;border: solid 2px white&quot;&gt;...&lt;/button&gt; is not clickable at point (994, 84). Other element would receive the click: &lt;a href=&quot;http://rameshqaonline.lovestoblog.com/index.php?route=account/order&quot;&gt;...&lt;/a&gt;
+  (Session info: chrome=111.0.5563.147)
+Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.16.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [554d85a6f8058010ea73ae60d239ac60, clickElement {id=d4f36440-e626-496e-8281-c03d7e9d9dd8}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 111.0.5563.147, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\rames\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58123}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58123/devtoo..., se:cdpVersion: 111.0.5563.147, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (554d85a6f8058010ea73ae60d239ac60)] -&gt; css selector: button[class=&apos;btn btn-default btn-lg&apos;]]
+Session ID: 554d85a6f8058010ea73ae60d239ac60
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at com.sun.proxy.$Proxy38.click(Unknown Source)
+	at com.qa.opencart.utils.WebDriverUtils.click(WebDriverUtils.java:213)
+	at com.qa.opencart.pages.MyAccountPage.doProductSearch(MyAccountPage.java:130)
+	at com.qa.opencart.testcase.MyAccountPageTest.PerformProductSearchTest(MyAccountPageTest.java:106)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1640443250", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1640443250'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button type=&quot;button&quot; class=&quot;btn btn-default btn-lg&quot; style=&quot;border: solid 2px white&quot;&gt;...&lt;/button&gt; is not clickable at point (994, 84). Other element would receive the click: &lt;a href=&quot;http://rameshqaonline.lovestoblog.com/index.php?route=account/order&quot;&gt;...&lt;/a&gt;
+  (Session info: chrome=111.0.5563.147)
+Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.16.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [554d85a6f8058010ea73ae60d239ac60, clickElement {id=d4f36440-e626-496e-8281-c03d7e9d9dd8}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 111.0.5563.147, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\rames\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58123}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58123/devtoo..., se:cdpVersion: 111.0.5563.147, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (554d85a6f8058010ea73ae60d239ac60)] -&gt; css selector: button[class=&apos;btn btn-default btn-lg&apos;]]
+Session ID: 554d85a6f8058010ea73ae60d239ac60
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at jdk.internal.reflect.GeneratedMethodAccessor26.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at com.sun.proxy.$Proxy38.click(Unknown Source)
+	at com.qa.opencart.utils.WebDriverUtils.click(WebDriverUtils.java:213)
+	at com.qa.opencart.pages.MyAccountPage.doProductSearch(MyAccountPage.java:130)
+	at com.qa.opencart.testcase.MyAccountPageTest.PerformProductSearchTest(MyAccountPageTest.java:106)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>5</td>
+<td>com.qa.opencart.testcase.MyAccountPageTest@4abf3f0</td></tr>
+<tr>
+<td title='com.qa.opencart.testcase.MyAccountPageTest.PerformProductSearchTest()'><b>PerformProductSearchTest</b><br>Test class: com.qa.opencart.testcase.MyAccountPageTest<br>Test method: TC_07_Perform product search<br>Parameters: iMac</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button type=&quot;button&quot; class=&quot;btn btn-default btn-lg&quot; style=&quot;border: solid 2px white&quot;&gt;...&lt;/button&gt; is not clickable at point (994, 84). Other element would receive the click: &lt;a href=&quot;http://rameshqaonline.lovestoblog.com/index.php?route=account/order&quot;&gt;...&lt;/a&gt;
+  (Session info: chrome=111.0.5563.147)
+Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.16.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [554d85a6f8058010ea73ae60d239ac60, clickElement {id=d4f36440-e626-496e-8281-c03d7e9d9dd8}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 111.0.5563.147, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\rames\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58123}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58123/devtoo..., se:cdpVersion: 111.0.5563.147, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (554d85a6f8058010ea73ae60d239ac60)] -&gt; css selector: button[class=&apos;btn btn-default btn-lg&apos;]]
+Session ID: 554d85a6f8058010ea73ae60d239ac60
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at com.sun.proxy.$Proxy38.click(Unknown Source)
+	at com.qa.opencart.utils.WebDriverUtils.click(WebDriverUtils.java:213)
+	at com.qa.opencart.pages.MyAccountPage.doProductSearch(MyAccountPage.java:130)
+	at com.qa.opencart.testcase.MyAccountPageTest.PerformProductSearchTest(MyAccountPageTest.java:106)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1780197614", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1780197614'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button type=&quot;button&quot; class=&quot;btn btn-default btn-lg&quot; style=&quot;border: solid 2px white&quot;&gt;...&lt;/button&gt; is not clickable at point (994, 84). Other element would receive the click: &lt;a href=&quot;http://rameshqaonline.lovestoblog.com/index.php?route=account/order&quot;&gt;...&lt;/a&gt;
+  (Session info: chrome=111.0.5563.147)
+Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.16.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [554d85a6f8058010ea73ae60d239ac60, clickElement {id=d4f36440-e626-496e-8281-c03d7e9d9dd8}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 111.0.5563.147, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\rames\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58123}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58123/devtoo..., se:cdpVersion: 111.0.5563.147, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (554d85a6f8058010ea73ae60d239ac60)] -&gt; css selector: button[class=&apos;btn btn-default btn-lg&apos;]]
+Session ID: 554d85a6f8058010ea73ae60d239ac60
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at jdk.internal.reflect.GeneratedMethodAccessor26.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at com.sun.proxy.$Proxy38.click(Unknown Source)
+	at com.qa.opencart.utils.WebDriverUtils.click(WebDriverUtils.java:213)
+	at com.qa.opencart.pages.MyAccountPage.doProductSearch(MyAccountPage.java:130)
+	at com.qa.opencart.testcase.MyAccountPageTest.PerformProductSearchTest(MyAccountPageTest.java:106)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>5</td>
+<td>com.qa.opencart.testcase.MyAccountPageTest@4abf3f0</td></tr>
+<tr>
+<td title='com.qa.opencart.testcase.MyAccountPageTest.PerformProductSearchTest()'><b>PerformProductSearchTest</b><br>Test class: com.qa.opencart.testcase.MyAccountPageTest<br>Test method: TC_07_Perform product search<br>Parameters: Samsung</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button type=&quot;button&quot; class=&quot;btn btn-default btn-lg&quot; style=&quot;border: solid 2px white&quot;&gt;...&lt;/button&gt; is not clickable at point (994, 84). Other element would receive the click: &lt;a href=&quot;http://rameshqaonline.lovestoblog.com/index.php?route=account/order&quot;&gt;...&lt;/a&gt;
+  (Session info: chrome=111.0.5563.147)
+Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.16.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [554d85a6f8058010ea73ae60d239ac60, clickElement {id=d4f36440-e626-496e-8281-c03d7e9d9dd8}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 111.0.5563.147, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\rames\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58123}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58123/devtoo..., se:cdpVersion: 111.0.5563.147, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (554d85a6f8058010ea73ae60d239ac60)] -&gt; css selector: button[class=&apos;btn btn-default btn-lg&apos;]]
+Session ID: 554d85a6f8058010ea73ae60d239ac60
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at com.sun.proxy.$Proxy38.click(Unknown Source)
+	at com.qa.opencart.utils.WebDriverUtils.click(WebDriverUtils.java:213)
+	at com.qa.opencart.pages.MyAccountPage.doProductSearch(MyAccountPage.java:130)
+	at com.qa.opencart.testcase.MyAccountPageTest.PerformProductSearchTest(MyAccountPageTest.java:106)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace450370534", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace450370534'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button type=&quot;button&quot; class=&quot;btn btn-default btn-lg&quot; style=&quot;border: solid 2px white&quot;&gt;...&lt;/button&gt; is not clickable at point (994, 84). Other element would receive the click: &lt;a href=&quot;http://rameshqaonline.lovestoblog.com/index.php?route=account/order&quot;&gt;...&lt;/a&gt;
+  (Session info: chrome=111.0.5563.147)
+Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.16.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [554d85a6f8058010ea73ae60d239ac60, clickElement {id=d4f36440-e626-496e-8281-c03d7e9d9dd8}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 111.0.5563.147, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\rames\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58123}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58123/devtoo..., se:cdpVersion: 111.0.5563.147, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (554d85a6f8058010ea73ae60d239ac60)] -&gt; css selector: button[class=&apos;btn btn-default btn-lg&apos;]]
+Session ID: 554d85a6f8058010ea73ae60d239ac60
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at jdk.internal.reflect.GeneratedMethodAccessor26.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at com.sun.proxy.$Proxy38.click(Unknown Source)
+	at com.qa.opencart.utils.WebDriverUtils.click(WebDriverUtils.java:213)
+	at com.qa.opencart.pages.MyAccountPage.doProductSearch(MyAccountPage.java:130)
+	at com.qa.opencart.testcase.MyAccountPageTest.PerformProductSearchTest(MyAccountPageTest.java:106)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>5</td>
+<td>com.qa.opencart.testcase.MyAccountPageTest@4abf3f0</td></tr>
+<tr>
+<td title='com.qa.opencart.testcase.ProductDetailsPageTest.productImageTest()'><b>productImageTest</b><br>Test class: com.qa.opencart.testcase.ProductDetailsPageTest<br>Test method: TC_01_Verify the product image test</td>
+<td><div><pre>org.testng.TestNGException: 
+Cannot inject @Test annotated Method [productImageTest] with [class java.lang.String, class java.lang.String, int].
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1277491290", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1277491290'><pre>org.testng.TestNGException: 
+Cannot inject @Test annotated Method [productImageTest] with [class java.lang.String, class java.lang.String, int].
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:436)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:350)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:693)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:879)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:728)
+	at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72)
+	at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:924)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.qa.opencart.testcase.ProductDetailsPageTest@293cde83</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.qa.opencart.testcase.LoginPageTest.verifyLoginPageTitleTest()'><b>verifyLoginPageTitleTest</b><br>Test class: com.qa.opencart.testcase.LoginPageTest<br>Test method: TC_02_Verifying the Login Page Title</td>
+<td></td>
+<td>0</td>
+<td>com.qa.opencart.testcase.LoginPageTest@5ac7aa18</td></tr>
+<tr>
+<td title='com.qa.opencart.testcase.MyAccountPageTest.verifyMyAccountPageElementsTest()'><b>verifyMyAccountPageElementsTest</b><br>Test class: com.qa.opencart.testcase.MyAccountPageTest<br>Test method: TC_03_verify My Account Page Elements</td>
+<td></td>
+<td>2</td>
+<td>com.qa.opencart.testcase.MyAccountPageTest@4abf3f0</td></tr>
+<tr>
+<td title='com.qa.opencart.testcase.MyAccountPageTest.verifyBrokenLinksInMyAccountPageTest()'><b>verifyBrokenLinksInMyAccountPageTest</b><br>Test class: com.qa.opencart.testcase.MyAccountPageTest<br>Test method: TC_06_verify the broken links in my account page</td>
+<td></td>
+<td>34</td>
+<td>com.qa.opencart.testcase.MyAccountPageTest@4abf3f0</td></tr>
+<tr>
+<td title='com.qa.opencart.testcase.LoginPageTest.verifyLoginPageUrlTest()'><b>verifyLoginPageUrlTest</b><br>Test class: com.qa.opencart.testcase.LoginPageTest<br>Test method: TC_01_Verifying the login page url</td>
+<td></td>
+<td>0</td>
+<td>com.qa.opencart.testcase.LoginPageTest@5ac7aa18</td></tr>
+<tr>
+<td title='com.qa.opencart.testcase.RegistrationPageTest.registerAccountWithExcelDataTest()'><b>registerAccountWithExcelDataTest</b><br>Test class: com.qa.opencart.testcase.RegistrationPageTest<br>Test method: TC_02_Register an account with excel data<br>Parameters: manju, jayaprakash, 6.234445593E9, manju@123, no</td>
+<td></td>
+<td>43</td>
+<td>com.qa.opencart.testcase.RegistrationPageTest@4e4c3a38</td></tr>
+<tr>
+<td title='com.qa.opencart.testcase.RegistrationPageTest.registerAccountWithExcelDataTest()'><b>registerAccountWithExcelDataTest</b><br>Test class: com.qa.opencart.testcase.RegistrationPageTest<br>Test method: TC_02_Register an account with excel data<br>Parameters: harshini, ch, 6303236395, harshini@123, yes</td>
+<td></td>
+<td>42</td>
+<td>com.qa.opencart.testcase.RegistrationPageTest@4e4c3a38</td></tr>
+<tr>
+<td title='com.qa.opencart.testcase.LoginPageTest.verifyReturningCustomerHeaderTextTest()'><b>verifyReturningCustomerHeaderTextTest</b><br>Test class: com.qa.opencart.testcase.LoginPageTest<br>Test method: TC_07_verify returning Customer header in login Page</td>
+<td></td>
+<td>0</td>
+<td>com.qa.opencart.testcase.LoginPageTest@5ac7aa18</td></tr>
+<tr>
+<td title='com.qa.opencart.testcase.RegistrationPageTest.registerAccountWithExcelDataTest()'><b>registerAccountWithExcelDataTest</b><br>Test class: com.qa.opencart.testcase.RegistrationPageTest<br>Test method: TC_02_Register an account with excel data<br>Parameters: bhavana, Uppara, 2.065519189E9, bhavana@123, no</td>
+<td></td>
+<td>42</td>
+<td>com.qa.opencart.testcase.RegistrationPageTest@4e4c3a38</td></tr>
+<tr>
+<td title='com.qa.opencart.testcase.ProductDetailsPageTest.ProductMetadataTest()'><b>ProductMetadataTest</b><br>Test class: com.qa.opencart.testcase.ProductDetailsPageTest<br>Test method: TC_02_ product_metadata Test</td>
+<td></td>
+<td>6</td>
+<td>com.qa.opencart.testcase.ProductDetailsPageTest@293cde83</td></tr>
+<tr>
+<td title='com.qa.opencart.testcase.LoginPageTest.verifyNewCustomerHeaderTest()'><b>verifyNewCustomerHeaderTest</b><br>Test class: com.qa.opencart.testcase.LoginPageTest<br>Test method: TC_03_verify newCustomer header in login Page</td>
+<td></td>
+<td>0</td>
+<td>com.qa.opencart.testcase.LoginPageTest@5ac7aa18</td></tr>
+<tr>
+<td title='com.qa.opencart.testcase.MyAccountPageTest.verifyMyAccountHeadersListTest()'><b>verifyMyAccountHeadersListTest</b><br>Test class: com.qa.opencart.testcase.MyAccountPageTest<br>Test method: TC_05_Verify My Account headers list </td>
+<td></td>
+<td>0</td>
+<td>com.qa.opencart.testcase.MyAccountPageTest@4abf3f0</td></tr>
+<tr>
+<td title='com.qa.opencart.testcase.LoginPageTest.happyPathLoginTest()'><b>happyPathLoginTest</b><br>Test class: com.qa.opencart.testcase.LoginPageTest<br>Test method: TC_08_login to the Open cart Application</td>
+<td></td>
+<td>7</td>
+<td>com.qa.opencart.testcase.LoginPageTest@5ac7aa18</td></tr>
+<tr>
+<td title='com.qa.opencart.testcase.HomePageTest.verifyOpenCartLogoTest()'><b>verifyOpenCartLogoTest</b><br>Test class: com.qa.opencart.testcase.HomePageTest<br>Test method: TC_01_Verifying the opencart Logo</td>
+<td></td>
+<td>0</td>
+<td>com.qa.opencart.testcase.HomePageTest@765df79d</td></tr>
+<tr>
+<td title='com.qa.opencart.testcase.MyAccountPageTest.verifyMyAccountPageTitleTest()'><b>verifyMyAccountPageTitleTest</b><br>Test class: com.qa.opencart.testcase.MyAccountPageTest<br>Test method: TC_02_Verifying the MyAccount Page Title</td>
+<td></td>
+<td>0</td>
+<td>com.qa.opencart.testcase.MyAccountPageTest@4abf3f0</td></tr>
+<tr>
+<td title='com.qa.opencart.testcase.MyAccountPageTest.verifyMyAccountPageUrlTest()'><b>verifyMyAccountPageUrlTest</b><br>Test class: com.qa.opencart.testcase.MyAccountPageTest<br>Test method: TC_01_VerifyingMyAccountPage url</td>
+<td></td>
+<td>0</td>
+<td>com.qa.opencart.testcase.MyAccountPageTest@4abf3f0</td></tr>
+<tr>
+<td title='com.qa.opencart.testcase.LoginPageTest.verifyRegisterAccountTextTest()'><b>verifyRegisterAccountTextTest</b><br>Test class: com.qa.opencart.testcase.LoginPageTest<br>Test method: TC_04_verify register account text in login Page</td>
+<td></td>
+<td>0</td>
+<td>com.qa.opencart.testcase.LoginPageTest@5ac7aa18</td></tr>
+<tr>
+<td title='com.qa.opencart.testcase.LoginPageTest.navigateToForgotPasswordPageTest()'><b>navigateToForgotPasswordPageTest</b><br>Test class: com.qa.opencart.testcase.LoginPageTest<br>Test method: TC_06_navigate to Forgot Password page from login Page</td>
+<td></td>
+<td>2</td>
+<td>com.qa.opencart.testcase.LoginPageTest@5ac7aa18</td></tr>
+<tr>
+<td title='com.qa.opencart.testcase.RegistrationPageTest.RegisterAccountTest()'><b>RegisterAccountTest</b><br>Test class: com.qa.opencart.testcase.RegistrationPageTest<br>Test method: TC_01_Register an account with faker data</td>
+<td></td>
+<td>43</td>
+<td>com.qa.opencart.testcase.RegistrationPageTest@4e4c3a38</td></tr>
+<tr>
+<td title='com.qa.opencart.testcase.HomePageTest.verifyOpenCartPageTitleTest()'><b>verifyOpenCartPageTitleTest</b><br>Test class: com.qa.opencart.testcase.HomePageTest<br>Test method: TC_02_Verifying the opencart Page Title</td>
+<td></td>
+<td>0</td>
+<td>com.qa.opencart.testcase.HomePageTest@765df79d</td></tr>
+<tr>
+<td title='com.qa.opencart.testcase.HomePageTest.navigateToLoginPageTest()'><b>navigateToLoginPageTest</b><br>Test class: com.qa.opencart.testcase.HomePageTest<br>Test method: TC_04_navigate to Login Page</td>
+<td></td>
+<td>7</td>
+<td>com.qa.opencart.testcase.HomePageTest@765df79d</td></tr>
+<tr>
+<td title='com.qa.opencart.testcase.LoginPageTest.navigateToRegistrationPageTest()'><b>navigateToRegistrationPageTest</b><br>Test class: com.qa.opencart.testcase.LoginPageTest<br>Test method: TC_05_navigate to Registration from login Page</td>
+<td></td>
+<td>3</td>
+<td>com.qa.opencart.testcase.LoginPageTest@5ac7aa18</td></tr>
+<tr>
+<td title='com.qa.opencart.testcase.RegistrationPageTest.registerAccountWithExcelDataTest()'><b>registerAccountWithExcelDataTest</b><br>Test class: com.qa.opencart.testcase.RegistrationPageTest<br>Test method: TC_02_Register an account with excel data<br>Parameters: Vandana, senthil, 3146069849, vandana@123, yes</td>
+<td></td>
+<td>43</td>
+<td>com.qa.opencart.testcase.RegistrationPageTest@4e4c3a38</td></tr>
+<tr>
+<td title='com.qa.opencart.testcase.LoginPageTest.emptyLoginTest()'><b>emptyLoginTest</b><br>Test class: com.qa.opencart.testcase.LoginPageTest<br>Test method: TC_09_Empty credentials login to the Open cart Application</td>
+<td></td>
+<td>8</td>
+<td>com.qa.opencart.testcase.LoginPageTest@5ac7aa18</td></tr>
+<tr>
+<td title='com.qa.opencart.testcase.MyAccountPageTest.verifyMyAccountMenuOptionsTest()'><b>verifyMyAccountMenuOptionsTest</b><br>Test class: com.qa.opencart.testcase.MyAccountPageTest<br>Test method: TC_04_verify My account options list</td>
+<td></td>
+<td>2</td>
+<td>com.qa.opencart.testcase.MyAccountPageTest@4abf3f0</td></tr>
+<tr>
+<td title='com.qa.opencart.testcase.HomePageTest.navigateToRegistrationPageTest()'><b>navigateToRegistrationPageTest</b><br>Test class: com.qa.opencart.testcase.HomePageTest<br>Test method: TC_03_navigate to registration Page</td>
+<td></td>
+<td>7</td>
+<td>com.qa.opencart.testcase.HomePageTest@765df79d</td></tr>
+</table><p>
+</body>
+</html>

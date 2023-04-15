@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Failed_suite__OpenCartSuite_" class="navigator-link">
+              <span class="suite-name border-passed">Failed suite [OpenCartSuite]</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Failed_suite__OpenCartSuite_" class="navigator-link ">
+                    <span>C:\eclipse-workspace\OpenCartHybridFramework-Mar222023\test-output\OpenCartSuite\testng-failed.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Failed_suite__OpenCartSuite_" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Failed_suite__OpenCartSuite_" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Failed_suite__OpenCartSuite_" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Failed_suite__OpenCartSuite_" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Failed_suite__OpenCartSuite_" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Failed_suite__OpenCartSuite_" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">8 methods,   8 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Failed_suite__OpenCartSuite_" class="hide-methods passed suite-Failed_suite__OpenCartSuite_"> (hide)</a> <!-- hide-methods passed suite-Failed_suite__OpenCartSuite_ -->
+                      <a href="#" panel-name="suite-Failed_suite__OpenCartSuite_" class="show-methods passed suite-Failed_suite__OpenCartSuite_"> (show)</a> <!-- show-methods passed suite-Failed_suite__OpenCartSuite_ -->
+                    </span>
+                    <div class="method-list-content passed suite-Failed_suite__OpenCartSuite_">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Failed_suite__OpenCartSuite_" title="com.qa.opencart.testcase.MyAccountPageTest" class="method navigator-link" hash-for-method="PerformProductSearchTest(MacBook)">PerformProductSearchTest(MacBook)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Failed_suite__OpenCartSuite_" title="com.qa.opencart.testcase.MyAccountPageTest" class="method navigator-link" hash-for-method="PerformProductSearchTest(iMac)">PerformProductSearchTest(iMac)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Failed_suite__OpenCartSuite_" title="com.qa.opencart.testcase.MyAccountPageTest" class="method navigator-link" hash-for-method="PerformProductSearchTest(Samsung)">PerformProductSearchTest(Samsung)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Failed_suite__OpenCartSuite_" title="com.qa.opencart.testcase.ProductDetailsPageTest" class="method navigator-link" hash-for-method="productImageTest(Macbook, MacBook Pro, 4)">productImageTest(Macbook, MacBook Pro, 4)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Failed_suite__OpenCartSuite_" title="com.qa.opencart.testcase.ProductDetailsPageTest" class="method navigator-link" hash-for-method="productImageTest(Macbook, MacBook Air, 4)">productImageTest(Macbook, MacBook Air, 4)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Failed_suite__OpenCartSuite_" title="com.qa.opencart.testcase.ProductDetailsPageTest" class="method navigator-link" hash-for-method="productImageTest(Apple, Apple Cinema 30&quot;, 6)">productImageTest(Apple, Apple Cinema 30", 6)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Failed_suite__OpenCartSuite_" title="com.qa.opencart.testcase.ProductDetailsPageTest" class="method navigator-link" hash-for-method="productImageTest(Samsung, Samsung SyncMaster 941BW, 1)">productImageTest(Samsung, Samsung SyncMaster 941BW, 1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Failed_suite__OpenCartSuite_" title="com.qa.opencart.testcase.ProductDetailsPageTest" class="method navigator-link" hash-for-method="productImageTest(iMac, iMac, 3)">productImageTest(iMac, iMac, 3)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Failed_suite__OpenCartSuite_ -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Failed_suite__OpenCartSuite_" class="panel Failed_suite__OpenCartSuite_">
+          <div class="suite-Failed_suite__OpenCartSuite_-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qa.opencart.testcase.ProductDetailsPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="productImageTest(Macbook, MacBook Pro, 4)">
+                  </a> <!-- productImageTest(Macbook, MacBook Pro, 4) -->
+                  <span class="method-name">productImageTest</span>
+                  <span class="parameters">(Macbook,MacBook Pro,4)</span>
+                  <em>
+(TC_01_Verify the product image test)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="productImageTest(Macbook, MacBook Air, 4)">
+                  </a> <!-- productImageTest(Macbook, MacBook Air, 4) -->
+                  <span class="method-name">productImageTest</span>
+                  <span class="parameters">(Macbook,MacBook Air,4)</span>
+                  <em>
+(TC_01_Verify the product image test)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="productImageTest(Apple, Apple Cinema 30&quot;, 6)">
+                  </a> <!-- productImageTest(Apple, Apple Cinema 30", 6) -->
+                  <span class="method-name">productImageTest</span>
+                  <span class="parameters">(Apple,Apple Cinema 30",6)</span>
+                  <em>
+(TC_01_Verify the product image test)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="productImageTest(Samsung, Samsung SyncMaster 941BW, 1)">
+                  </a> <!-- productImageTest(Samsung, Samsung SyncMaster 941BW, 1) -->
+                  <span class="method-name">productImageTest</span>
+                  <span class="parameters">(Samsung,Samsung SyncMaster 941BW,1)</span>
+                  <em>
+(TC_01_Verify the product image test)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="productImageTest(iMac, iMac, 3)">
+                  </a> <!-- productImageTest(iMac, iMac, 3) -->
+                  <span class="method-name">productImageTest</span>
+                  <span class="parameters">(iMac,iMac,3)</span>
+                  <em>
+(TC_01_Verify the product image test)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Failed_suite__OpenCartSuite_-class-passed -->
+          <div class="suite-Failed_suite__OpenCartSuite_-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qa.opencart.testcase.MyAccountPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="PerformProductSearchTest(MacBook)">
+                  </a> <!-- PerformProductSearchTest(MacBook) -->
+                  <span class="method-name">PerformProductSearchTest</span>
+                  <span class="parameters">(MacBook)</span>
+                  <em>
+(TC_07_Perform product search)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="PerformProductSearchTest(iMac)">
+                  </a> <!-- PerformProductSearchTest(iMac) -->
+                  <span class="method-name">PerformProductSearchTest</span>
+                  <span class="parameters">(iMac)</span>
+                  <em>
+(TC_07_Perform product search)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="PerformProductSearchTest(Samsung)">
+                  </a> <!-- PerformProductSearchTest(Samsung) -->
+                  <span class="method-name">PerformProductSearchTest</span>
+                  <span class="parameters">(Samsung)</span>
+                  <em>
+(TC_07_Perform product search)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Failed_suite__OpenCartSuite_-class-passed -->
+        </div> <!-- panel Failed_suite__OpenCartSuite_ -->
+        <div panel-name="test-xml-Failed_suite__OpenCartSuite_" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\eclipse-workspace\OpenCartHybridFramework-Mar222023\test-output\OpenCartSuite\testng-failed.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Failed suite [OpenCartSuite]&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.qa.opencart.listeners.ExtentReportListener&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;OpenCartTest(failed)&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.qa.opencart.testcase.MyAccountPageTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;beforeMethod&quot;/&gt;
+          &lt;include name=&quot;commonTearDown&quot;/&gt;
+          &lt;include name=&quot;doLogout&quot;/&gt;
+          &lt;include name=&quot;beforeClass&quot;/&gt;
+          &lt;include name=&quot;PerformProductSearchTest&quot; invocation-numbers=&quot;0 1 2&quot;/&gt;
+          &lt;include name=&quot;commonSetUp&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.qa.opencart.testcase.MyAccountPageTest --&gt;
+      &lt;class name=&quot;com.qa.opencart.testcase.ProductDetailsPageTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;productImageTest&quot;/&gt;
+          &lt;include name=&quot;doLogout&quot;/&gt;
+          &lt;include name=&quot;commonTearDown&quot;/&gt;
+          &lt;include name=&quot;beforeClass&quot;/&gt;
+          &lt;include name=&quot;beforeMethod&quot;/&gt;
+          &lt;include name=&quot;commonSetUp&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.qa.opencart.testcase.ProductDetailsPageTest --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- OpenCartTest(failed) --&gt;
+&lt;/suite&gt; &lt;!-- Failed suite [OpenCartSuite] --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Failed_suite__OpenCartSuite_" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Failed suite [OpenCartSuite]</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">OpenCartTest(failed) (2 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Failed_suite__OpenCartSuite_" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Failed suite [OpenCartSuite]</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Failed_suite__OpenCartSuite_" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Failed suite [OpenCartSuite]</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Failed_suite__OpenCartSuite_');
+function tableData_Failed_suite__OpenCartSuite_() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(8);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'productImageTest')
+data.setCell(0, 2, 'com.qa.opencart.testcase.ProductDetailsPageTest')
+data.setCell(0, 3, 7150);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'productImageTest')
+data.setCell(1, 2, 'com.qa.opencart.testcase.ProductDetailsPageTest')
+data.setCell(1, 3, 6098);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'productImageTest')
+data.setCell(2, 2, 'com.qa.opencart.testcase.ProductDetailsPageTest')
+data.setCell(2, 3, 6083);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'productImageTest')
+data.setCell(3, 2, 'com.qa.opencart.testcase.ProductDetailsPageTest')
+data.setCell(3, 3, 5897);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'productImageTest')
+data.setCell(4, 2, 'com.qa.opencart.testcase.ProductDetailsPageTest')
+data.setCell(4, 3, 5841);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'PerformProductSearchTest')
+data.setCell(5, 2, 'com.qa.opencart.testcase.MyAccountPageTest')
+data.setCell(5, 3, 5072);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'PerformProductSearchTest')
+data.setCell(6, 2, 'com.qa.opencart.testcase.MyAccountPageTest')
+data.setCell(6, 3, 5013);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'PerformProductSearchTest')
+data.setCell(7, 2, 'com.qa.opencart.testcase.MyAccountPageTest')
+data.setCell(7, 3, 4962);
+window.suiteTableData['Failed_suite__OpenCartSuite_']= { tableData: data, tableDiv: 'times-div-Failed_suite__OpenCartSuite_'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 46 seconds</span>
+              <div id="times-div-Failed_suite__OpenCartSuite_">
+              </div> <!-- times-div-Failed_suite__OpenCartSuite_ -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Failed_suite__OpenCartSuite_" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Failed suite [OpenCartSuite]</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Failed_suite__OpenCartSuite_" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">7 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.qa.opencart.testcase.ProductDetailsPageTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">ProductMetadataTest</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.qa.opencart.testcase.MyAccountPageTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">verifyMyAccountPageTitleTest</span>
+                <br/>
+                <span class="ignored-method-name">verifyMyAccountMenuOptionsTest</span>
+                <br/>
+                <span class="ignored-method-name">verifyBrokenLinksInMyAccountPageTest</span>
+                <br/>
+                <span class="ignored-method-name">verifyMyAccountPageUrlTest</span>
+                <br/>
+                <span class="ignored-method-name">verifyMyAccountPageElementsTest</span>
+                <br/>
+                <span class="ignored-method-name">verifyMyAccountHeadersListTest</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Failed_suite__OpenCartSuite_" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.opencart.testcase.MyAccountPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">commonSetUp(chrome)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">5917 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">17988 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">PerformProductSearchTest(MacBook)</span>
+                <span class="method-start">18107 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">23447 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">PerformProductSearchTest(iMac)</span>
+                <span class="method-start">23464 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">28611 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">PerformProductSearchTest(Samsung)</span>
+                <span class="method-start">28624 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">doLogout</span>
+                <span class="method-start">33823 ms</span>
+              </div> <!-- configuration-class after -->
+              <div class="configuration-class after">
+                <span class="method-name">commonTearDown</span>
+                <span class="method-start">41452 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.opencart.testcase.ProductDetailsPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">commonSetUp(chrome)</span>
+                <span class="method-start">41673 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">46270 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">58400 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">productImageTest(Macbook, MacBook Pro, 4)</span>
+                <span class="method-start">58413 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">65768 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">productImageTest(Macbook, MacBook Air, 4)</span>
+                <span class="method-start">65803 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">72076 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">productImageTest(iMac, iMac, 3)</span>
+                <span class="method-start">72086 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">78359 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">productImageTest(Samsung, Samsung SyncMaster 941BW, 1)</span>
+                <span class="method-start">78371 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">84396 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">productImageTest(Apple, Apple Cinema 30", 6)</span>
+                <span class="method-start">84407 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">doLogout</span>
+                <span class="method-start">90506 ms</span>
+              </div> <!-- configuration-class after -->
+              <div class="configuration-class after">
+                <span class="method-name">commonTearDown</span>
+                <span class="method-start">97899 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

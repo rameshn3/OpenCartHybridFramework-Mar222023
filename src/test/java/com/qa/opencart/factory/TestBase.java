@@ -57,7 +57,11 @@ public class TestBase {
 
 
 	}
-
+/**
+ * this method verifies the given urls with status code
+ * @param url
+ * @throws IOException
+ */
 	public static void verifyUrls(String url) throws IOException {
 		//create object for URL class
 		URL urlobj=new URL(url);
